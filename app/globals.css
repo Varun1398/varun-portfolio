@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Bakbak+One&family=Dongle&family=Duru+Sans');
+
+body{
+  background: rgb(255, 255, 255);
+  cursor: none;
+}
+.cursor{
+  height: 32px;
+  width: 32px;
+  border-radius:50%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgb(24,23,23);
+  pointer-events: none;
+  z-index: 999999999;
+}
