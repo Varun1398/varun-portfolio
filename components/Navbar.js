@@ -7,6 +7,8 @@ import { GrFormClose } from "react-icons/gr";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { useRouter } from "next/navigation";
 import DropMenu from "./DropMenu";
+import { AnimatePresence } from "framer-motion";
+
 function Navbar() {
   const router = useRouter();
   const [drop, setDrop] = useState(false);
@@ -36,8 +38,9 @@ function Navbar() {
         </div>
       </div>
       {/* drop menu */}
-      
+      <AnimatePresence>
       {drop && <DropMenu setDrop={setDrop}/>}
+      </AnimatePresence>
     </header>
   );
 }

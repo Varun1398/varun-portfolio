@@ -43,7 +43,16 @@ function Hero() {
 
   return (
     <div>
-      <div className="flex flex-col item-center justify-center h-[88vh] px-[5%] select-none">
+      <motion.div
+        initial="hidden"
+        whileInView="show"
+        variants={{
+          hidden: { opacity: 0 },
+          show: { opacity: 1 },
+        }}
+        viewport={{ once: false, animate: 0.25 }}
+        className="flex flex-col item-center justify-center h-[88vh] px-[5%] select-none"
+      >
         <div>
           <motion.div
             className="cursor"
@@ -85,7 +94,7 @@ function Hero() {
             />
           </div>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 }
