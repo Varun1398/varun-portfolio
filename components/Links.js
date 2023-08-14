@@ -18,7 +18,7 @@ function Links({ last, path, name }) {
     relative
     items-end
     hover:text-purple-400
-    ${last ? "before:hidder" : ""}
+    ${last ? "before:hidden" : ""}
     `}
     >
       <div className="flex items-center gap-6 hover:last-of-type:-rotate-12">
