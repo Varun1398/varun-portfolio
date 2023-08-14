@@ -23,7 +23,7 @@ function Navbar() {
           <Button
             icon={<BsFillArrowRightCircleFill />}
             label="Contact"
-            onCLick={() => router.push("/contacts")}
+            onCLick={() => router.push("/contact")}
           />
           <div className="rounded-full bg-gray-300 p-2 z-[999999]">
             {drop ? (

@@ -4,7 +4,9 @@ import Button from "@/components/Button";
 import { BsFillArrowRightCircleFill } from "react-icons/bs";
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
+import { useRouter } from "next/navigation";
 function Hero() {
+  const router = useRouter();
   const [moustPosition, setMousePostion] = useState({
     x: 0,
     y: 0,
@@ -87,7 +89,7 @@ function Hero() {
             </p>
 
             <Button
-              // onCLick={()=>{}}
+              onCLick={()=>router.push("/contact")}
               label="Connect With Me"
               icon={<BsFillArrowRightCircleFill size={28} />}
               black
