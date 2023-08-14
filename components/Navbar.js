@@ -34,7 +34,6 @@ function Navbar() {
             )}
           </div>
         </div>
-      {console.log('drop', drop)}
       </div>
       {/* drop menu */}
       
