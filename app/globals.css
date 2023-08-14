@@ -19,3 +19,16 @@ body{
   pointer-events: none;
   z-index: 999999999;
 }
+@media screen and (min-width:80rem) {
+  .pseudo::before{
+    content:'';
+    position: absolute;
+    height: 100%;
+    width: 1px;
+    background: #000;
+    top: 0;
+    display: block;
+    right: 0;
+  }
+  
+}
